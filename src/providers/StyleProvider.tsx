@@ -86,9 +86,9 @@ const initialState: StyleState = {
     font: "sans-serif",
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const StyleContext = createContext<[StyleState, React.Dispatch<StyleAction>]>([initialState, () => { }]);
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const useStyleContext = () => useContext(StyleContext);
 
 export const StyleProvider: React.FC<React.PropsWithChildren> = ({
